@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    font-family: 'SVN-Gilroy';
+    text-decoration: none;
+    color: #6f42c1;
+    font-weight: 600;
+}
+a:hover{
+    cursor: pointer;
+    color: #FCAF17;
+}
+header {
+    /*  dang hang ngang */
+    display:flex;
+    /*  tung cot can o giua */
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+}
+.logo {
+    flex: 1;
+}
+.logo1 {
+    height: 50px ;
+    width: 100px;
+}
+.menu {
+    flex: 3;
+    display : flex;
+}
+/* điều chỉnh các con của menu */
+.menu > li {
+    padding: 30px 20px 10px 10px;
+    position: relative;
+}
+/* rê chuột vào thẻ li sổ xuống */
+.menu > li:hover .sub-menu {
+    /*1 display: block; */
+    visibility: visible; /* hiện */
+    top: 60px;
+}
+.sub-menu{
+    position: absolute;
+    width: 250px;
+    border:1px solid #fff;
+    padding: 20px 0px 10px 20px;
+    /* khi muốn hiện một khối 
+    display: none; 1*/
+    /* ban đầu thì*/
+    visibility: hidden; /* ẩn */
+    top: 50px;
+    transition: 1s; /* 0,3 giây sao hiện ra */
+    background-color: #f8f6ff;
+}
+.menu > li a {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    line-height: 20px;
+}
+
+.sub-menu ul li {
+    padding-left: 20px;
+
+}
+.font-menu a{
+    color: #333;
+}
+.font-menu:hover a{
+    cursor: pointer;
+    color: #FCAF17;
+}
+.other {
+    flex: 1;
+    display : flex;
+}
+.other > li {
+    padding: 30px 12px 10px 12px;
+}
+.other > li:first-child  {
+    position: relative;
+}
+.other > li:first-child input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    outline: none;
+}
+.other > li:first-child i {
+    position: absolute;
+    right: 10px;
+}
+.container-image{
+    background-color: aqua;
+    height: 500px;
+    width: 100%;
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
+.cartegory{
+    padding: 100px 0px 0px 0px;
+}
+.row{
+    display: flex;
+}
+/* process -cartegory_left */
+.cartegory-left{
+    width: 20%;
+    background-color: aqua;
+}
+.aside-cartegory{
+    background-color: dodgerblue;
+}
+.title-left-item{
+    margin-top: 54px;
+
+}
+.title-left-item1{
+    margin-top:5px;
+}
+.name-title-left-item{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    color: #333;
+}
+.detail-name-title-left{
+    padding-top: 10px;
+    background-color: #ffc107;
+}
+.block-ul-name-left{
+    display: flex;
+}
+.cartegory-left-lia{
+    background-color: cadetblue;
+}
+
+.block-li-name-left{
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    padding-top: 10px;
+}
+.block-span{
+    width: 70%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    padding: 5px 20px;
+}
+.block-span1{
+    width: 70%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    padding: 5px 0px;
+}
+.block-span2{
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    padding: 5px 0px;
+}
+.span-name-left{
+    font-family:  font-family Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:palevioletred;
+    color:#7A7A9D;
+    display: block;
+    text-align: center;
+    height: 100%;
+}
+
+.cartegory-right {
+    width: 80%; 
+}
+.cartegory-item{
+    display: flex;
+}
+
+.cartegory-right-item:first-child{
+    flex:2;
+    font-weight: bold;
+}
+.cartegory-right-item{
+    flex:1;
+    padding:0 12px;
+}
+.cartegory-right-item button{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.cartegory-right-item select{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.cartegory-right-content{
+    background-color: #FCAF17; 
+ 
+}
+.block-content-item{
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #FCAF17;
+}
+.cartegory-right-content-item{
+    width:25%;
+    background-color: #6f42c1;
+    padding:12px ;
+
+}
+.edit-images{
+    width: 245px;
+    height: 300px;
+    
+}
+/* chưa hoan thien size images */
+.edit-images:hover{
+   
+}
+.content-price-item > span{
+
+    background-color: yellow;
+}
+.content-title-images{
+    background-color: pink;
+}
+.product-name > a {
+    font-family: "SVN-Gilroy";
+    color: #333;
+    font-size: 16px;
+}
+.product-name > a:hover{
+    color: #ffc107;
+}
+.swatch-color-wrapper{
+    height: 30px;
+  
+    background-color: chartreuse;
+}
+/* justify-content: space-between; */
+.pagination{
+    width: 100%;
+    height: 20px;
+    background-color: gray;
+}
